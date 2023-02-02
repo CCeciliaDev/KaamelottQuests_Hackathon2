@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+.mainDivHome {
+    background-image: url(../assets/images/Medieval_quest2.png) ;
+    background-size: cover;
+
+    height: 100vh;
+    position: relative;
+    width: 85%;
+}
+.preTitleHome {
+    font-size: 28px;
+    font-family: 'Eagle Lake', cursive;
+    color: white;
+    text-align: center;
+    padding: 100px 0px 0px 0px;
+    filter: drop-shadow(0px 0px 15px #000);
+}
+.titleHome {
+    font-size: 54px;
+    font-family: 'Eagle Lake', cursive;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    filter: drop-shadow(0px 0px 15px #000);
+
+}
+.divDesc {
+    width: 40%;
+    margin: auto;
+}
+.descHome {
+    font-size: 18px;
+    font-family: 'Eagle Lake', cursive;
+    color: white;
+    text-align: center;
+    filter: drop-shadow(0px 0px 15px #000);
+}
