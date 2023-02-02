@@ -5,6 +5,7 @@ const Quests = () => {
   return (
     <div>
 		<DisplayQuests />
+    <div>bidulle</div>
 	</div>
   );
 }
