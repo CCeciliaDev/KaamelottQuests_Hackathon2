@@ -7,6 +7,7 @@ import Knights from "./screens/Knights"
 import DisplayKnights from "./screens/DisplayKnights"
 import Team from "./screens/Team"
 import Home from "./screens/Home"
+import Contact from "./screens/Contact"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/knights" element={<Knights />} />
 				<Route path="/knights/:id" element={<DisplayKnights />} />
         <Route path="/team" element={<Team />} />
+		<Route path="/contact" element={<Contact />} />	
 			</Routes>
 		</div>
   );
