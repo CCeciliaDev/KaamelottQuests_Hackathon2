@@ -66,4 +66,4 @@ const Knights = () => {
   )
 }
 
-export default Knights
+export default Knights 
