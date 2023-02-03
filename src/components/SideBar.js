@@ -6,7 +6,7 @@ const SideBar = () => {
   return (
     <div className="sidebar">
       <div className="Div-BtnLogin">
-        <Link to='/quests' id='Btn-login'>Quêtes</Link>
+        <Link to='/screenquest' id='Btn-login'>Quêtes</Link>
         <Link to='/knights' id='Btn-account'>Chevaliers</Link>
       </div>
       <Link to='/'>
