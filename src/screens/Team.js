@@ -7,7 +7,7 @@ const Team = () => {
     <div>
     <div className='teamMain'>
     <div className='serviceDescription'>
-        <h2 className='knightTitle'>
+        <h2 className='teamTitle'>
           - Les chevaliers de la table SQL -
         </h2>
         <hr className='una'></hr>

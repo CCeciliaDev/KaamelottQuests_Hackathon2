@@ -3,6 +3,7 @@ import './Knights.css';
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BsPlusLg } from "react-icons/bs";
+import KnightCard from '../components/KnightCard'
 // import ModalNewKnight from './ModalNewKnight'
 
 const Knights = () => {
@@ -32,7 +33,7 @@ const Knights = () => {
         {knightInfo1
           ? knightInfo1.map(knightInfo => {
               return (
-                <DisplayKnights
+                <KnightCard
                   knightInfo1={knightInfo}
                   key={knightInfo.id}
                 />
@@ -65,4 +66,4 @@ const Knights = () => {
   )
 }
 
-
+export default Knights

@@ -1,5 +1,8 @@
 .bodyKnights{
     background-image: url(../assets/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
     margin-top: -10px;
 }
@@ -54,4 +57,8 @@
 .iconePlus{
     scale: 2;
     width: 10%;
+}
+
+.listKnights{
+    display : flex
 }
