@@ -1,6 +1,7 @@
 .bodyKnights{
     background-image: url(../assets/images/bg2.jpg);
     height: 100vh;
+    margin-top: -10px;
 }
 
 .knightTitle{

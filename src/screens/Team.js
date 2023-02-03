@@ -6,6 +6,12 @@ const Team = () => {
   return (
     <div>
     <div className='teamMain'>
+    <div className='serviceDescription'>
+        <h2 className='knightTitle'>
+          - Les chevaliers de la table SQL -
+        </h2>
+        <hr className='una'></hr>
+      </div>
         <div className='container'>
           <div className='row'>
             <div className='col-md-4 col-sm-6'>
