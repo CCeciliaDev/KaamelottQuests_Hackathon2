@@ -4,16 +4,13 @@
     background-position: center;
     background-size: cover;
     height: 100vh;
-    margin-top: -10px;
-    position: relative;
-    width: 85%;
 }
 
 .knightTitle{
     color: #64172A;
     text-shadow: 4px 2px 3px rgba(33,14,9,0.61);
-    font-size: 7vh;
-    margin: 0px;
+    font-size: 9vh;
+    margin-top: 0px;
 }
 
 .descriptionText{

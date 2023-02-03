@@ -1,0 +1,8 @@
+
+.QC-container {
+    position: relative;
+    width: 85%;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+}

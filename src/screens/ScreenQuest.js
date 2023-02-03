@@ -1,12 +1,9 @@
+import './ScreenQuest.css'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import QuestCard from '../components/QuestCard'
 
-const QuestCards = () => {
-  //   const [isSeleted, setIsSelected] = useState(false)
-  //   const handleClick = () => {
-  // setIsSelected((preState) => !preState)
-  //   }
+const ScreenQuest = () => {
   const [quests, setQuests] = useState([])
 
   useEffect(() => {
@@ -18,7 +15,6 @@ const QuestCards = () => {
 
   return (
     <div className='QC-container'>
-      {/* <button onClick={handleClick}> QUEST </button> */}
       {quests.map((quest) => (
         <QuestCard
           key={quest.ID}
@@ -30,11 +26,10 @@ const QuestCards = () => {
           BESTIARY={quest.BESTIARY}
           KNIGHTS_REQUIRED={quest.KNIGHTS_REQUIRED}
           LOCATION={quest.LOCATION}
-          //   image={quest.image}
         />
       ))}
     </div>
   )
 }
 
-export default QuestCards
+export default ScreenQuest
