@@ -1,7 +1,8 @@
+
 .QC-container {
     position: relative;
     width: 85%;
-    background: no-repeat url(../assets/images/quest.jpg) center;
+    background-color: black;
     background-size: cover;
     background-attachment: fixed;
 }
