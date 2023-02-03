@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
-import Knights from '../screens/Knights'
+// import React, { useState } from 'react'
+// import { Link } from 'react-router-dom'
+// import Knights from '../screens/Knights'
 
 function QuestModal({
   power_required,

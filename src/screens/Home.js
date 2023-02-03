@@ -16,18 +16,6 @@ const Home = () => {
         <p className='descHome'>Si vous êtes chevaliers à la recherche d'une quête, vous êtes au bon endroit.</p>
         <p className='descHome'>Vous voici dans le royaume de l'ogre.</p>
         <p className='descHome'>Le roi Arthur vous attend pour de nouvelles aventures !</p>
-      {/* <div class="container">
-        <div class="red flame"></div>
-        <div class="orange flame"></div>
-        <div class="yellow flame"></div>
-        <div class="white flame"></div>
-      </div>
-      <div class="container2">
-        <div class="red flame"></div>
-        <div class="orange flame"></div>
-        <div class="yellow flame"></div>
-        <div class="white flame"></div>
-      </div> */}
       </div>
 	</div>
   );

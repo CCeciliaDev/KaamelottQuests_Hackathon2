@@ -3,7 +3,7 @@
     height: 100vh;
 }
 .mainDivDisplayKnights {
-   
+
     display: flex;
     flex-direction: row;
     
