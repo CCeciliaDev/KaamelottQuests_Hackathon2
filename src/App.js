@@ -9,6 +9,7 @@ import Team from './screens/Team'
 import Home from './screens/Home'
 import Contact from './screens/Contact'
 import KnightCard from './components/KnightCard'
+import ScreenQuest from './screens/ScreenQuest'
 
 function App() {
   return (

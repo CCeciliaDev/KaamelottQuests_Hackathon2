@@ -8,7 +8,7 @@ const DisplayCard = (props) => {
 							src={props.img}
 							alt={props.firstname}
 						/>
-						<h6 className='nameKnightCard gold'>{props.firstname}</h6>
+						<h6 className='nameKnightCard gold'>{props.firstname} </h6>
 					</div>
     )
 }
