@@ -1,0 +1,59 @@
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color: #64172A;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+.submit {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 200px;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+.submit:hover { background:#CC4949; }
+
+.submit:active {
+	transform: translateY(0.1em);}
+
+.contactTitle{
+    color: #64172A;
+    text-shadow: 4px 2px 3px rgba(33,14,9,0.61);
+    font-size: 5vh;
+    margin: 10px;
+}
+
+.bodyContact{
+    background-image: url(../assets/images/fond_1.png);
+    height: 100vh;
+    margin: -10px;
+}

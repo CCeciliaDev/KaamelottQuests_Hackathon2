@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = () => {
   return (
     <div className="Div-BtnContact">
-      <span id='Btn-contact'>Contact</span>
+      <Link to='/contact' id='Btn-contact'>Contact</Link>
       <Link to='/team' id='Btn-team'>Team</Link>
     </div>
   )
