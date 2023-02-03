@@ -65,4 +65,4 @@ const Knights = () => {
   )
 }
 
-
+export default Knights;

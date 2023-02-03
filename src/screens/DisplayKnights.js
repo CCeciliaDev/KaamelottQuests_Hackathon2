@@ -3,8 +3,11 @@ import './DisplayKnights.css';
 
 const DisplayKnights = () => {
   return (
-    <div className='mainDivDisplayKnights'>
-      <h1 className=''>Titre</h1>
+    <div className='mainOneDivDisplayKnights'>
+      <h2 className='knightTitle'>
+          - Name -
+        </h2>
+        <div className='mainDivDisplayKnights'>
       <div className='divNameImg'>
 		    <p>images</p>
 		    <p>firstname</p>
@@ -14,6 +17,7 @@ const DisplayKnights = () => {
         <p>power%</p>
         <p>Quests</p>
         <p>description</p>
+    </div>
     </div>
 	</div>
   );
