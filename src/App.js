@@ -10,6 +10,7 @@ import Home from './screens/Home'
 import Contact from './screens/Contact'
 import KnightCard from './components/KnightCard'
 import ScreenQuest from './screens/ScreenQuest'
+import Connexion from './screens/Connexion'
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
         <Route path='/knights/:id' element={<DisplayKnights />} />
         <Route path='/team' element={<Team />} />
         <Route path='/screenquest' element={<ScreenQuest />} />
-        <Route path='/contact' element={<Contact />} />
+
+        <Route path='/connexion' element={<Connexion />} />
       </Routes>
     </div>
   )

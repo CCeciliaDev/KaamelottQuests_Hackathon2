@@ -1,0 +1,80 @@
+.Connect-all {
+    background-image: url(../assets/images/Medieval_quest.png);
+    background: cover no-repeat;
+    height: 100vh;
+
+}
+
+.Card {
+    background-image: url(../assets/images/vintage-paper.jpg);
+
+    border: solid 5px black;
+    border-style: double;
+    border-radius: 20px;
+    width: 450px;
+    height: 450px;
+    padding: 20px;
+    flex-direction: column;
+    position: absolute;
+    left: 421px;
+    top: 100px;
+
+}
+
+
+
+.Card h1 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+
+
+.Card h2 {
+
+    padding-right: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+.User,
+.Password {
+    /* display: flex; */
+    /* padding-bottom: 10px; */
+    /* margin: 20px; */
+
+}
+
+.connect {
+
+    position: absolute;
+    top: 406px;
+    left: 194px;
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    background-color: darkgray;
+    border: 2px solid rgb(65, 63, 63);
+    box-shadow: 4px 4px 2px rgb(49, 48, 48);
+    border-radius: 53px;
+}
+
+
+.User {
+    margin-bottom: 40px;
+}
+
+
+
+.Container-bouton button:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+}
+
+;
