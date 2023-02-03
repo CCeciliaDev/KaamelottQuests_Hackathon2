@@ -7,6 +7,7 @@ import Knights from "./screens/Knights"
 import DisplayKnights from "./screens/DisplayKnights"
 import Team from "./screens/Team"
 import Home from "./screens/Home"
+import KnightCard from "./components/KnightCard"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/quests" element={<Quests />} />
         		<Route path="/quests/:id" element={<DisplayQuests />} />
+        		<Route path="/knightcard" element={<KnightCard />} />
         		<Route path="/knights" element={<Knights />} />
 				<Route path="/knights/:id" element={<DisplayKnights />} />
         		<Route path="/team" element={<Team />} />

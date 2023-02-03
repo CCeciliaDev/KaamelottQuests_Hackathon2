@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
+.mainDivKnights {
+    background-image: url(../assets/images/vintage-paper.jpg);
+    background-size: cover;
+    background-size: cover;
+    height: 100vh;
+}
+.divTitleFex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 20px 0px;
+}
+.node {
+    width: 40px;
+    margin: 20px;
+}
+.titleKnights {
+    color: rgb(111, 29, 77);
+    font-family: 'Eagle Lake', cursive;
+    font-size: 32px;
+    margin: 16px 0px;
+    text-align: center;
+    
+}
+.divKnightsFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
