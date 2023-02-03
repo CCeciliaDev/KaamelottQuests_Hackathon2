@@ -51,3 +51,8 @@ textarea {
     font-size: 5vh;
     margin: 10px;
 }
+
+.bodyContact{
+    background-image: url(../assets/images/fond_1.png);
+    height: 100vh;
+}

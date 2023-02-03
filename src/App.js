@@ -16,14 +16,14 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/quests" element={<Quests />} />
-        		<Route path="/quests/:id" element={<DisplayQuests />} />
-        		<Route path="/knights" element={<Knights />} />
+				<Route path="/quests/:id" element={<DisplayQuests />} />
+				<Route path="/knights" element={<Knights />} />
 				<Route path="/knights/:id" element={<DisplayKnights />} />
-        <Route path="/team" element={<Team />} />
-		<Route path="/contact" element={<Contact />} />	
+				<Route path="/team" element={<Team />} />
+				<Route path="/contact" element={<Contact />} />	
 			</Routes>
 		</div>
-  );
+);
 }
 
 export default App;

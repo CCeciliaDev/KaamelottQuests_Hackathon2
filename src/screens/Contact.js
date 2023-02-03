@@ -8,7 +8,7 @@ const Contact = () => {
       alert('Le père Blaise prendra connaissance au plus vite de votre doléance...')
     }
   return (
-    <div>
+    <div className="bodyContact">
         <h2 className='contactTitle'>Vous en avez gros ? Ecrivez nous!</h2>
 		<form>      
             <input name="name" type="text" class="feedback-input" placeholder="Nom" />   
