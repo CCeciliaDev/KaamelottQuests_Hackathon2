@@ -1,6 +1,6 @@
 import "./App.css"
 import { Routes, Route } from "react-router-dom"
-import Header from "./components/Header"
+import SideBar from "./components/SideBar"
 import Quests from "./screens/Quests"
 import DisplayQuests from "./screens/DisplayQuests"
 import Knights from "./screens/Knights"
@@ -11,14 +11,14 @@ import Home from "./screens/Home"
 function App() {
   return (
     <div className="App">
-			<Header />
+			<SideBar />
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/quests" element={<Quests />} />
-        <Route path="/quests/:id" element={<DisplayQuests />} />
-        <Route path="/knights" element={<Knights />} />
+        		<Route path="/quests/:id" element={<DisplayQuests />} />
+        		<Route path="/knights" element={<Knights />} />
 				<Route path="/knights/:id" element={<DisplayKnights />} />
-        <Route path="/team" element={<Team />} />
+        		<Route path="/team" element={<Team />} />
 			</Routes>
 		</div>
   );
