@@ -2,6 +2,8 @@ import DisplayKnights from './DisplayKnights';
 import './Knights.css';
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import { BsPlusLg } from "react-icons/bs";
+import ModalNewKnight from '.screens/ModalNewKnight.js'
 
 const Knights = () => {
   const [knightInfo1, setKnightInfo1] = useState([])
@@ -10,6 +12,10 @@ const Knights = () => {
       setKnightInfo1(response.data)
     })
   }, [])
+
+  const [isOpen, setIsOpen] = useState(false)
+  const [newKnightIsOpen, setNewKnightIsOpen] = useState(false)
+
 
   return (
     <div className='bodyKnights'>
@@ -34,7 +40,27 @@ const Knights = () => {
             })
           : null}
       </div>
+      <div className='newsContainer'>
+        <div className='news'>
+      <div className='newKnight'>
+      <div style={{ display: isOpen ? 'block' : 'none' }}></div>
+      <div
+        className='boutonKnight'
+        onClick={() => {
+          setNewKnightIsOpen(true)
+          setIsOpen(false)
+          window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+        }}
+      >
+        <p>Ajouter un chevalier à la table</p>
+        <p><BsPlusLg className='iconePlus' /></p><ModalNewKnight
+        open={newKnightIsOpen}
+        onClose={() => newKnightIsOpen(false)}
+        ></ModalNewKnight>
+        </div>
     </div>
+    </div>
+    </div></div>
   )
 }
 
