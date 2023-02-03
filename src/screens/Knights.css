@@ -1,5 +1,8 @@
 .bodyKnights{
     background-image: url(../assets/images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     height: 100vh;
 }
 
@@ -17,7 +20,7 @@
 
 .una{
     max-width: 500px;
-    margin-top : 50px;
+    margin-top : 20px;
     color: #64172A;
     background-color: #64172A;
     height : 2px;
@@ -34,6 +37,11 @@
     max-width: 400px;
     min-width: 280px;
     padding: 10px;
+}
+
+.newKnight:hover{
+    background-color: rgba(81, 25, 19, 0.68);
+    cursor: pointer;
 }
 
 .newsletter {
@@ -53,4 +61,13 @@
 .iconePlus{
     scale: 2;
     width: 10%;
+}
+
+.listKnights{
+    display : flex;
+    flex-wrap: wrap;
+    /* width: 85%; */
+    justify-content: center;
+padding-top: 20px;
+text-decoration: none;
 }

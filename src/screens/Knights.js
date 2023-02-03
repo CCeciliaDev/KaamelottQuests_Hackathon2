@@ -3,6 +3,8 @@ import './Knights.css';
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BsPlusLg } from "react-icons/bs";
+import DisplayCard from '../components/DisplayCard'
+import { Link } from 'react-router-dom';
 // import ModalNewKnight from './ModalNewKnight'
 
 const Knights = () => {
@@ -31,38 +33,40 @@ const Knights = () => {
       <div className='listKnights'>
         {knightInfo1
           ? knightInfo1.map(knightInfo => {
+            const knightLink = `/knights/${knightInfo.id}`
               return (
-                <DisplayKnights
-                  knightInfo1={knightInfo}
+                <Link to={knightLink}>
+                <DisplayCard
+                  img={knightInfo.image}
+                  firstname={knightInfo.firstname}
                   key={knightInfo.id}
-                />
+                /></Link>
               )
             })
           : null}
       </div>
-      <div className='newsContainer'>
+      {/* <div className='newsContainer'>
         <div className='news'>
-      <div className='newKnight'>
+      <div className='newKnight'> */}
       {/* <div style={{ display: isOpen ? 'block' : 'none' }}></div> */}
-      <div
-        className='boutonKnight'
-        // onClick={() => {
-        //   setNewKnightIsOpen(true)
+      {/* <div
+        className='boutonKnight' */}
+        {/* // onClick={() => { */}
+        {/* //   setNewKnightIsOpen(true)
         //   setIsOpen(false)
         //   window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
         // }}
       >
         <p>Ajouter un chevalier à la table</p>
-        <p><BsPlusLg className='iconePlus' /></p>
+        <p><BsPlusLg className='iconePlus' /></p> */}
         {/* <ModalNewKnight
         open={newKnightIsOpen}
         onClose={() => newKnightIsOpen(false)}
         ></ModalNewKnight> */}
-        </div>
+        {/* </div> */}
+    {/* </div> */}
     </div>
-    </div>
-    </div></div>
   )
 }
 
-export default Knights;
+export default Knights 

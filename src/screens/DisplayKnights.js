@@ -1,32 +1,35 @@
 import './DisplayKnights.css';
 import { useParams } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import axios from 'axios'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const DisplayKnights = () => {
-    const params = useParams()
-    const [knightDetails, setKnightDetails] = useState()
+  const params = useParams()
+  const [knightDetails, setKnightDetails] = useState()
 
-    useEffect(() => {
-        axios.get(`http://localhost:4242/knights/${params.id}`)
-        .then(res => setKnightDetails(res.datat[0]))
-    },[])
+  useEffect(()=>{
+      axios.get(`http://localhost:4242/knights/${params.id}`)
+      .then(res => setKnightDetails(res.data[0]))
+  },[]) 
 
   return (
     <div className='mainOneDivDisplayKnights'>
       {console.log(params)}
-      <h2 className='knightTitle'>
-          - {knightDetails?.firstname}Name -
+      <h2 className='knightTitle'style={{textDecoration: 'none'}}>
+          - {knightDetails?.firstname} -
         </h2>
         <div className='mainDivDisplayKnights'>
       <div className='divNameImg'>
-		    <p>{knightDetails?.image}images</p>
-		    <p>{knightDetails?.power}power</p>
+		    <img src={knightDetails?.image} />
+
       </div>
       <div className='divDescEtc'>
-        <p>{knightDetails?.origin}origine</p>
-        <p>{knightDetails?.quest}Quests</p>
-        <p>{knightDetails?.description}description</p>
+        <p>Origine : <br></br>{knightDetails?.origine}</p>
+        <p>Puissance : <br></br>{knightDetails?.power} xp</p>
+        <p>Quête en cours : <br></br>Quête du graal
+          {/* {knightDetails?.quests} */}
+          </p>
+        <p>{knightDetails?.description}</p>
     </div>
     </div>
 	</div>

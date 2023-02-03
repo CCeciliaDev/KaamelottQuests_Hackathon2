@@ -116,4 +116,11 @@
     position: relative;
     width: 85%;
 }
+.teamTitle{
+    color: #64172A;
+    text-shadow: 4px 2px 3px rgba(33,14,9,0.61);
+    font-size: 7vh;
+    margin-top: 0px;
+    padding-right: 300px;
+}
 
