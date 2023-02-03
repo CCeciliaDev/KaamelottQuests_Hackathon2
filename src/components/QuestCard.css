@@ -1,0 +1,20 @@
+.QC-all {
+    height: 60vh;
+
+}
+
+.QC-picture {
+    height: 40vh;
+}
+
+.QC-title {
+    color: white;
+    size: 20px;
+    padding: 60px 0 100px 0;
+
+}
+
+.QC-description {
+    color: white;
+    padding: 60px 0 20px 0;
+}
