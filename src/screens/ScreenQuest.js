@@ -4,10 +4,6 @@ import axios from 'axios'
 import QuestCard from '../components/QuestCard'
 
 const ScreenQuest = () => {
-  //   const [isSeleted, setIsSelected] = useState(false)
-  //   const handleClick = () => {
-  // setIsSelected((preState) => !preState)
-  //   }
   const [quests, setQuests] = useState([])
 
   useEffect(() => {
@@ -19,7 +15,6 @@ const ScreenQuest = () => {
 
   return (
     <div className='QC-container'>
-      {/* <button onClick={handleClick}> QUEST </button> */}
       {quests.map((quest) => (
         <QuestCard
           key={quest.ID}
@@ -31,7 +26,6 @@ const ScreenQuest = () => {
           BESTIARY={quest.BESTIARY}
           KNIGHTS_REQUIRED={quest.KNIGHTS_REQUIRED}
           LOCATION={quest.LOCATION}
-          //   image={quest.image}
         />
       ))}
     </div>

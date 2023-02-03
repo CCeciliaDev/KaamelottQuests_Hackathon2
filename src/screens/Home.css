@@ -4,7 +4,7 @@
     background-size: cover;
     height: 100vh;
     position: relative;
-    width: 85%;
+    width: 85.01%;
 }
 .titleHome {
     font-size: 54px;
@@ -55,37 +55,12 @@
 
 @keyframes crawl {
   0% {
-      top: 100%;
-      opacity: 1;
-  }
-
-  80% {
-      opacity: 1;
-  }
-
-  100% {
       top: 0;
-      opacity: 1;
-  }
-}
-
-@keyframes crawl {
-  0% {
-      top: -100px;
       transform: rotateX(26deg) translateZ(0);
   }
 
   100% {
-      top: 0px;
+      top: 25vh;
       transform: rotateX(25deg) translateZ(-960px);
   }
 }
-  
-  @keyframes flicker{
-    0%   {transform: rotate(-1deg);}
-    20%  {transform: rotate(1deg);}
-    40%  {transform: rotate(-1deg);}
-    60%  {transform: rotate(1deg) scaleY(1.04);}
-    80%  {transform: rotate(-2deg) scaleY(0.92);}
-    100% {transform: rotate(1deg);}
-  }

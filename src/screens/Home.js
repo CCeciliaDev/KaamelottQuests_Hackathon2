@@ -21,18 +21,6 @@ const Home = () => {
         <p className='descHome'>
           Le roi Arthur vous attend pour de nouvelles aventures !
         </p>
-        {/* <div class="container">
-        <div class="red flame"></div>
-        <div class="orange flame"></div>
-        <div class="yellow flame"></div>
-        <div class="white flame"></div>
-      </div>
-      <div class="container2">
-        <div class="red flame"></div>
-        <div class="orange flame"></div>
-        <div class="yellow flame"></div>
-        <div class="white flame"></div>
-      </div> */}
       </div>
     </div>
   )

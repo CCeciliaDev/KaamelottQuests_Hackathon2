@@ -1,7 +1,7 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -13,8 +13,8 @@
     z-index: 1;
     position: relative;
     margin: 50px;
-    width: 310px;
-    height: 310px;
+    width: 15vw;
+    height: 33.5vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -41,9 +41,9 @@
 .our-team:hover:before{ transform: translateY(-50%) scaleX(0.7); }
 .our-team:hover:after{ transform: translate(-50%, -50%) scaleY(0.7); }
 .our-team img{
-    width: 310px;
+    width: 15vw;
     object-fit: cover;
-    height: 310px;
+    height: 33.5vh;
     border-radius: 10px;
     transition: all 0.3s ease 0s;
 }
@@ -113,5 +113,7 @@
 .teamMain{
     background-image: url(../assets/images/fond_1.png);
     height: 100vh;
+    position: relative;
+    width: 85%;
 }
 

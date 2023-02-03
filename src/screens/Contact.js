@@ -9,7 +9,7 @@ const Contact = () => {
     }
   return (
     <div className="bodyContact">
-        <h2 className='contactTitle'>Vous en avez gros ? Ecrivez nous!</h2>
+        <h2 className='contactTitle'>On en a gros ? Ecrivez nous!</h2>
 		<form>      
             <input name="name" type="text" class="feedback-input" placeholder="Nom" />   
             <input name="email" type="text" class="feedback-input" placeholder="Email" />
