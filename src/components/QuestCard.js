@@ -21,16 +21,18 @@ function QuestCard({
   }
   return (
     <div className='QC-all'>
+      <div className='mainDivCard'>
       <div className='QC-title'>
         <h1>{NAME}</h1>
       </div>
 
       <img className='QC-picture' src={Dragon} alt=''></img>
       <div className='QC-description'>{DESCRIPTION}</div>
-      <button onClick={handleClick}> QUEST </button>
+      <button className='openModalBtn' onClick={handleClick}> QUEST </button>
       <button className='openModalBtn' onClick={() => setOpenModal(true)}>
         Details
       </button>
+      </div>
       {openModal && (
         <QuestModal
           id={ID}
