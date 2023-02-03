@@ -1,6 +1,8 @@
 .mainOneDivDisplayKnights {
     background-image: url(../assets/images/bg2.jpg);
     height: 100vh;
+    position: relative;
+    width: 85%;
 }
 .mainDivDisplayKnights {
    
