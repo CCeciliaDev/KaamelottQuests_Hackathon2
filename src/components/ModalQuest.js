@@ -1,3 +1,4 @@
+import './ModalQuest.css'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Knights from '../screens/Knights'
@@ -20,23 +21,27 @@ function QuestModal({
   }
 
   return (
-    <div className='modalBg'>
-      <button onClick={() => closeModal(false)}>X</button>
-      <div className='titre'>
-        <h1> NOM :{name}</h1>
-      </div>
-      <div>
-        <p>DESCRIPTION :{description} </p>
-        <p>{bestiairy}</p>
-        <p>{artifact}</p>
-        <p>{location}</p>
-        <p>{Knights_required}</p>
-        <p>{power_required}</p>
-        <p>{reward}</p>
-      </div>
-      <div className='footer'>
-        <button onClick={() => closeModal(false)}>Annuler</button>
-        <button> Continuer</button>
+    <div className='MQ-all'>
+      <div className='modalBg'>
+        <button onClick={() => closeModal(false)}>X</button>
+        <div className='titre'>
+          <h1> NOM : {name}</h1>
+        </div>
+        <div>
+          <p>DESCRIPTION : {description} </p>
+          <p>Bestiaire : {bestiairy}</p>
+          <p>Artéfact : {artifact}</p>
+          <p>Lieu de la Quête : {location}</p>
+          <p>
+            Nombre de chevaliers requis pour cette mission : {Knights_required}
+          </p>
+          <p>Puissance requise : {power_required} xp </p>
+          <p>Récompense : {reward} xp </p>
+        </div>
+        <div className='footer'>
+          <button onClick={() => closeModal(false)}>Annuler</button>
+          <button> Continuer</button>
+        </div>
       </div>
     </div>
   )
