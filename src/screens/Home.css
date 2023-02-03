@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+.mainDivHome {
+    background-image: url(../assets/images/Medieval_quest2.png) ;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    width: 85%;
+}
+.titleHome {
+    font-size: 54px;
+    font-family: 'Eagle Lake', cursive;
+    color: white;
+    text-align: center;
+    padding: 230px 0px 20px 0px;
+    filter: drop-shadow(0px 0px 15px #000);
+    margin: 0px;
+
+}
+
+.divDesc {
+    width: 30%;
+    margin: auto;
+}
+
+.descHome {
+    font-size: 16px;
+    font-family: 'Eagle Lake', cursive;
+    color: white;
+    text-align: center;
+    filter: drop-shadow(0px 0px 15px #000);
+}
+
+/***** ROCK *****/
+.rock {
+  position: absolute;
+  height: 150px;
+  bottom: 0px;
+  left: 0px;
+}
+
+/***** SWORD *****/
+
+.swordAnimation {
+  height: 300px;
+  position: absolute;
+  top: -100%;
+  left: 0px;
+  animation-delay: 3s;
+  animation-duration: 0.5s;
+  animation-name: crawl;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes crawl {
+  0% {
+      top: 100%;
+      opacity: 1;
+  }
+
+  80% {
+      opacity: 1;
+  }
+
+  100% {
+      top: 0;
+      opacity: 1;
+  }
+}
+
+@keyframes crawl {
+  0% {
+      top: -100px;
+      transform: rotateX(26deg) translateZ(0);
+  }
+
+  100% {
+      top: 0px;
+      transform: rotateX(25deg) translateZ(-960px);
+  }
+}
+  
+  @keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+  }

@@ -1,0 +1,20 @@
+.mainOneDivDisplayKnights {
+    background-image: url(../assets/images/bg2.jpg);
+    height: 100vh;
+}
+.mainDivDisplayKnights {
+   
+    display: flex;
+    flex-direction: row;
+    
+}
+.divNameImg {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.divDescEtc {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
