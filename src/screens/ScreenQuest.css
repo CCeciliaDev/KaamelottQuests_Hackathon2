@@ -1,7 +1,7 @@
 .QC-container {
     position: relative;
     width: 85%;
-    height: contain;
-    background-image: url(../assets/images/quest.jpg);
-    background: linear-gradient(217deg, rgba(51, 51, 51, 1), rgba(255, 0, 0, 0) 70.71%),
+    background: no-repeat url(../assets/images/quest.jpg) center;
+    background-size: cover;
+    background-attachment: fixed;
 }
