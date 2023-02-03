@@ -1,4 +1,4 @@
-
+import './KnightCard.css';
 const DisplayCard = (props) => {
 
     return (
