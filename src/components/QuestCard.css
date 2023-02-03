@@ -1,10 +1,15 @@
 .QC-all {
     height: 60vh;
+}
+.mainDivCard {
+    
+    height: 500px;
 
 }
-
 .QC-picture {
-    height: 40vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: 3px solid rgb(151, 30, 30);
 }
 
 .QC-title {
@@ -17,4 +22,11 @@
 .QC-description {
     color: white;
     padding: 60px 0 20px 0;
+}
+
+.openModalBtn {
+    border-radius: 10px;
+    color: red;
+    padding: 5px;
+
 }
