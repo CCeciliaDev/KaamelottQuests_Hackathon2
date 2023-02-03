@@ -13,7 +13,7 @@ const Team = () => {
                 <img src={require('../assets/images/team4.jpg')} alt='destroy' />
                 <div className='team-content'>
                   <h3 className='title'>Hélène</h3>
-                  <span className='post'>Dev</span>
+                  <span className='post'>Chevalier Back</span>
                   <ul className='social'>
                     <li>
                       <a
@@ -42,7 +42,7 @@ const Team = () => {
                 <img src={require('../assets/images/team3.jpg')} alt='destroy' />
                 <div className='team-content'>
                   <h3 className='title'>Valter</h3>
-                  <span className='post'>Dev</span>
+                  <span className='post'>Chevalier Front</span>
                   <ul className='social'>
                     <li>
                       <a
@@ -66,12 +66,13 @@ const Team = () => {
                 </div>
               </div>
             </div>
+            <div className='row'>
             <div className='col-md-4 col-sm-6'>
               <div className='our-team'>
                 <img src={require('../assets/images/team2.jpg')} alt='destroy' />
                 <div className='team-content'>
                   <h3 className='title'>Cécilia</h3>
-                  <span className='post'>Dev</span>
+                  <span className='post'>Chevalier Front</span>
                   <ul className='social'>
                     <li>
                       <a
@@ -100,7 +101,7 @@ const Team = () => {
                 <img src={require('../assets/images/team1.jpg')} alt='destroy' />
                 <div className='team-content'>
                   <h3 className='title'>Alexandre</h3>
-                  <span className='post'>Dev</span>
+                  <span className='post'>Chevalier Back</span>
                   <ul className='social'>
                     <li>
                       <a
@@ -122,6 +123,7 @@ const Team = () => {
                     </li>
                   </ul>
                 </div>
+              </div>
               </div>
             </div>
           </div>
