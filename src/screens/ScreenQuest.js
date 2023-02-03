@@ -1,8 +1,9 @@
+import './ScreenQuest.css'
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import QuestCard from '../components/QuestCard'
 
-const QuestCards = () => {
+const ScreenQuest = () => {
   //   const [isSeleted, setIsSelected] = useState(false)
   //   const handleClick = () => {
   // setIsSelected((preState) => !preState)
@@ -37,4 +38,4 @@ const QuestCards = () => {
   )
 }
 
-export default QuestCards
+export default ScreenQuest
