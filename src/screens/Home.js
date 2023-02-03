@@ -7,10 +7,10 @@ const Home = () => {
     <div className='mainDivHome'>
 		  <h1 className='titleHome'>Kaamelott Quests</h1>
       <div>
-      <img className='swordAnimation' src={sword} alt="épée" />
+        <img className='swordAnimation' src={sword} alt="épée" />
       </div>
       <div>
-      <img className='rock' src={rock} alt="rocher" />
+        <img className='rock' src={rock} alt="rocher" />
       </div>
       <div className='divDesc'>
         <p className='descHome'>Si vous êtes chevaliers à la recherche d'une quête, vous êtes au bon endroit.</p>
