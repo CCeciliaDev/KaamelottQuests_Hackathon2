@@ -1,3 +1,12 @@
+@font-face{
+  font-family: Imported ;
+  src: url(./assets/fonts/EagleLake-Regular.ttf)
+}
+
+#root{
+  font-family: Imported;
+}
+
 .App {
   text-align: center;
 }

@@ -1,0 +1,24 @@
+.bodyKnights{
+    background-image: url(../assets/images/bg2.jpg);
+    height: 100vh;
+}
+
+.knightTitle{
+    color: #64172A;
+    text-shadow: 4px 2px 3px rgba(33,14,9,0.61);
+    font-size: 10vh;
+    margin: 10px;
+}
+
+.descriptionText{
+    color: white;
+    text-shadow: 4px 2px 3px rgba(33,14,9,0.61);
+}
+
+.una{
+    max-width: 500px;
+    margin-top : 50px;
+    color: #64172A;
+    background-color: #64172A;
+    height : 2px;
+}
