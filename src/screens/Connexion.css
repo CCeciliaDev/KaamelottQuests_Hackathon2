@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
 .Connect-all {
     background: url(../assets/images/Medieval_quest.png) no-repeat;
     background-size: cover;
     height: 100vh;
 
 }
+
 
 .Card {
     background-image: url(../assets/images/vintage-paper.jpg);
@@ -33,19 +36,46 @@
 }
 
 .connect {
-
+    color: white;
+    font-family: 'Eagle Lake', cursive;
+    text-decoration: double;
     position: absolute;
-    top: 406px;
+    top: 433px;
     left: 194px;
     box-sizing: border-box;
     width: 80px;
     height: 30px;
-    background-color: darkgray;
+    background-color: rgb(71, 1, 1);
     border: 2px solid rgb(65, 63, 63);
     box-shadow: 4px 4px 2px rgb(49, 48, 48);
-    border-radius: 53px;
+    border-radius: 7px;
 }
 
+.knightName {
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 7px;
+}
+
+.knightPassword {
+    width: 200px;
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 7px;
+}
+
+input[type=checkbox] {
+    accent-color: rgb(66, 2, 2);
+    width: 20px;
+    height: 20px;
+}
+
+.check {
+    position: absolute;
+    top: 390px;
+    left: 360px;
+}
 
 .User {
     margin-bottom: 40px;

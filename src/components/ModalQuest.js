@@ -20,12 +20,14 @@ function QuestModal({
   return (
     <div className='MQ-all'>
       <div className='modalBg'>
-        <button onClick={() => closeModal(false)}>X</button>
+        <button className='MQ-quests1' onClick={() => closeModal(false)}>
+          X
+        </button>
         <div className='titre'>
-          <h1> NOM : {name}</h1>
+          <h1>{name}</h1>
         </div>
         <div>
-          <p>DESCRIPTION : {description} </p>
+          <p>Description : {description} </p>
           <p>Bestiaire : {bestiairy}</p>
           <p>Artéfact : {artifact}</p>
           <p>Lieu de la Quête : {location}</p>
@@ -36,8 +38,10 @@ function QuestModal({
           <p>Récompense : {reward} xp </p>
         </div>
         <div className='footer'>
-          <button onClick={() => closeModal(false)}>Annuler</button>
-          <button> Continuer</button>
+          <button className='MQ-quests' onClick={() => closeModal(false)}>
+            Annuler
+          </button>
+          {/* <button className='MQ-quests'> Continuer</button> */}
         </div>
       </div>
     </div>
