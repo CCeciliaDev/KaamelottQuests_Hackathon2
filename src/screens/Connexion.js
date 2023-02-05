@@ -84,7 +84,7 @@ const Connect = (props) => {
           </button>
         </form>
         {isUserLoggedIn && <Message messageConf={messageConf} /> && (
-          <Link to={firstname === 'Arthur' ? '/Home' : '/knights'}>
+          <Link to={'/knights'}>
             WELCOME Messire
             <br />
             {firstname} ! <br />
