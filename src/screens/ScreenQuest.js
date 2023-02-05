@@ -14,9 +14,17 @@ const ScreenQuest = () => {
   }, [])
 
   return (
+    <div className='questBody'>
+      <div className='serviceDescription'>
+        <h2 className='knightTitle'>
+          - Liste des quêtes -
+        </h2>
+        <div className='descriptionText'>
+          Voici la liste des quêtes disponibles, bougez-vous les miches et tâchez de vous montrer utile !
+        </div></div>
     <div className='QC-container'>
       {quests.map((quest) => (
-        <QuestCard
+        <QuestCard className='card'
           key={quest.ID}
           ID={quest.ID}
           NAME={quest.NAME}
@@ -28,7 +36,7 @@ const ScreenQuest = () => {
           LOCATION={quest.LOCATION}
         />
       ))}
-    </div>
+    </div></div>
   )
 }
 

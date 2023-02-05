@@ -19,7 +19,7 @@ function App() {
         <Route path='/knights/:id' element={<DisplayKnights />} />
         <Route path='/team' element={<Team />} />
         <Route path='/screenquest' element={<ScreenQuest />} />
-
+        <Route path='/contact' element={<Contact />} />
         <Route path='/connexion' element={<Connexion />} />
       </Routes>
     </div>
