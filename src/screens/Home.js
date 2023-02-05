@@ -1,13 +1,16 @@
 import './Home.css'
 import sword from '../assets/images/sword.png'
 import rock from '../assets/images/rock2.png'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div className='mainDivHome'>
       <h1 className='titleHome'>Kaamelott Quests</h1>
       <div>
-        <img className='swordAnimation' src={sword} alt='épée' />
+        <Link to='/connexion'>
+          <img className='swordAnimation' src={sword} alt='épée' />
+        </Link>
       </div>
       <div>
         <img className='rock' src={rock} alt='rocher' />

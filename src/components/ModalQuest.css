@@ -1,13 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap');
+
 .MQ-all {
     background-image: url(../assets/images/vintage-paper.jpg);
     position: fixed;
     text-align: center;
-    top: 50%;
-    left: 50%;
+    top: 48%;
+    left: 42%;
     transform: translate(-50%, -50%);
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    text-shadow: rgb(9, 9, 9) 1px 10px 10px;
 
+}
+
+.MQ-quests {
+    background-color: #000000b8;
+    color: white;
+    height: 50px;
+    width: 166px;
+    border-radius: 14px;
+    font-family: 'Eagle Lake', cursive;
+    font-size: 20px;
+}
+
+.MQ-quests1 {
+    background-color: #000000b8;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: #181717;
+    font-family: 'Eagle Lake', cursive;
+}
+
+.MQ-quests1:hover {
+    background: linear-gradient(0deg, #181717, #080707), rgba(14, 27, 46, 0.74);
+}
+
+.MQ-quests1:active {
+
+    box-shadow: 0 5px rgb(239, 235, 236);
+    transform: translateY(5px);
+}
+
+.MQ-quests:hover {
+    background: linear-gradient(0deg, #181717, #080707), rgba(14, 27, 46, 0.74);
+}
+
+.MQ-quests:active {
+
+    box-shadow: 0 5px rgb(239, 235, 236);
+    transform: translateY(5px);
 }

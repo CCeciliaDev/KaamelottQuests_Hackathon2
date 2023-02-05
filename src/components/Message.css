@@ -1,0 +1,12 @@
+.Card a {
+    margin-top: 90px;
+    display: flex;
+    height: 135px;
+    align-items: flex-end;
+    color: white;
+    font-size: 30px;
+    box-shadow: 3px 5px 9px white;
+    text-shadow: 3px 2px 5px white;
+    text-transform: uppercase;
+    justify-content: center;
+}
