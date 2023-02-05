@@ -1,6 +1,6 @@
 .Connect-all {
-    background-image: url(../assets/images/Medieval_quest.png);
-    background: cover no-repeat;
+    background: url(../assets/images/Medieval_quest.png) no-repeat;
+    background-size: cover;
     height: 100vh;
 
 }
