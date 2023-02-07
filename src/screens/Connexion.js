@@ -1,37 +1,54 @@
 import './Connexion.css'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import Message from '../components/Message'
+import { useNavigate } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const Connect = (props) => {
   const [firstname, setFirstname] = useState('')
   const [password, setPassword] = useState('')
+  const [id, setId] = useState('')
   const [king, setKing] = useState('')
   const [kingPassword, setKingPassword] = useState('')
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(false)
   const [messageConf, setMessageConf] = useState('')
+  const navigate = useNavigate()
 
-  const handleSubmit = (e) => {
+  const handleClick = (e) => {
     e.preventDefault()
-    if (firstname.includes(firstname) && password.includes(password)) {
-      localStorage.setItem('chevaliers', JSON.stringify(firstname))
-      setMessageConf()
-    } else {
-      setMessageConf(`Mais tu n'es pas Sir Arthur `)
-    }
-    setIsUserLoggedIn((prevState) => !prevState)
+
+    axios
+      .post(`http://localhost:4242/login/`, { firstname })
+      .then((response) => {
+        if (response.data.length > 0) {
+          const id = response.data[0].id
+          console.log(response.data)
+          setMessageConf(`Bienvenue Sir ${firstname}`)
+          if (firstname === 'Arthur' && password === 'IamTheKing') {
+            setMessageConf(
+              `Bienvenue Sir ${firstname} Pendragon, Roi de Bretagne`
+            )
+            navigate('/knights')
+          } else if (
+            firstname === response.data[0].firstname &&
+            password === response.data[0].password
+          ) {
+            navigate(`/knights/${id}`)
+          }
+        } else if (firstname === 'Arthur' && password === 'IamTheKing') {
+          setMessageConf(
+            `Bienvenue Sir ${firstname} Pendragon, Roi de Bretagne`
+          )
+          navigate('/knights')
+        } else {
+          setMessageConf(`Mais tu n'es pas Sir Arthur ? Mécréaaant`)
+          navigate('/')
+        }
+      })
   }
 
-  useEffect(() => {
-    axios
-      .get(`http://localhost:4242/knights/1 `)
-      .then((response) => response.data)
-      .then((data) => {
-        setKingPassword(data.map((element) => element.password))
-        setKing(data.map((element) => element.firstname))
-      })
-  }, [])
   function myFunction() {
     const x = document.getElementById('MDP')
     if (x.type === 'password') {
@@ -43,7 +60,7 @@ const Connect = (props) => {
   return (
     <div className='Connect-all'>
       <div className='Card'>
-        <form className='Connexion' onSubmit={handleSubmit}>
+        <form className='Connexion' onSubmit={handleClick}>
           <label>
             <h1>Bienvenue Messire !</h1>
 
@@ -83,14 +100,11 @@ const Connect = (props) => {
             VALIDEZ
           </button>
         </form>
-        {isUserLoggedIn && <Message messageConf={messageConf} /> && (
-          <Link to={'/knights'}>
-            WELCOME Messire
-            <br />
-            {firstname} ! <br />
-            Cliquez ici
-          </Link>
-        )}
+        {
+          isUserLoggedIn && <p>{messageConf}</p>
+          //  && (
+          //   <button onClick={handleClick}>Bonjour Sir Arthur</button> )
+        }
       </div>
     </div>
   )
