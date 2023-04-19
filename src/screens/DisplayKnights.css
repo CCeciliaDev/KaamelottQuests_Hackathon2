@@ -1,0 +1,30 @@
+.mainOneDivDisplayKnights {
+    background-image: url(../assets/images/bg2.jpg);
+    height: 100vh;
+    position: relative;
+    width: 85%;
+}
+.mainDivDisplayKnights {
+    display: flex;
+    flex-direction: row;
+    
+}
+.divNameImg {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.divDescEtc {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    text-shadow: 4px 5px 5px rgba(33,14,0.61);
+
+}
+
+.divNameImg img{
+    max-height: 600px;
+    margin-left: 20px ;
+    border-radius: 40%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;}

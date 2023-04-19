@@ -1,0 +1,56 @@
+.QC-all {
+    height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+        border: 1px solid rgba(209, 213, 219, 0.3);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        background-color: rgba(151, 30, 30, 0.68);
+        max-width: 500px;
+        min-width: 280px;
+        /* margin: 60px; */
+        padding: 20px;
+        margin: 10px;
+        /* margin-top: -10px;
+        position: relative;
+        width: 85%; */
+}
+.mainDivCard {
+    /* border: 3px solid rgb(151, 30, 30); ; */
+    /* height: 500px; */
+
+}
+.QC-picture {
+    height: 30vh;
+    border-radius: 50%;
+    border: 3px solid rgb(151, 30, 30);
+}
+
+.QC-title {
+    color: white;
+    /* size: 20px; */
+    /* padding: 60px 0 100px 0; */
+
+}
+
+.QC-description {
+    color: white;
+    margin: 20px 0;
+    /* padding: 60px 0 20px 0; */
+}
+
+.openModalBtn {
+    border-radius: 10px;
+    font-family: fantasy;
+    color: white;
+    background-color:sienna;
+    width: 100px;
+    padding: 5px;
+    margin: 10px
+
+}
+.openModalBtn:hover {
+    cursor: pointer;
+    background-color: burlywood;
+}
